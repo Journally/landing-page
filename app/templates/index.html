@@ -42,11 +42,20 @@
                 </div>
                 <form>
                     <br>
-                    <div class="email-submission">
-                        <label class="email-submit-label">Stay informed</label>
-                        <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                    <div class="email-submission">     
+                        <form action="thank-you" method="POST">
+                            <!-- <input name="text">
+                            <input type="submit"> -->
+                        </form>
+
+                        <form class="user-signup" action="thank-you" method="POST">
+                            <label class="email-submit-label">Stay informed</label>
+                            <input name="exampleInputName" class="form-control" id="exampleInputName" placeholder="Enter your name">
+                            <input type="email" name="exampleInputEmail" class="form-control" id="exampleInputEmail" placeholder="Enter your email">
+                            <input type="submit" class="btn btn-outline-primary btn-lg" id="email-submit-button" value="Submit">
+                        </form>
                     </div>
-                    <div><a class="btn btn-outline-primary btn-lg" id="email-submit-button" href="thank-you" role="button">Submit</a></div>
+                    
                 </form>
             </div>
         </div>
