@@ -120,12 +120,22 @@ School vector created by pch.vector - www.freepik.com</a> */
     font-weight: bold;
 }
 
+#timeline {
+  color: #86d1cd !important;
+}
+
+.email-submit-label {
+  color: #2a4f96 !important;
+  font-family: "Copperplate";
+  font-weight: bold;
+}
+
 .btn-outline-primary {
     background-color: #eaf3fa !important;
     color: #86d1cd !important;
     border-color: #86d1cd !important;
     margin: 8px;
-    width: 120px;
+    font-size: 15px;
 }
 
 .btn-outline-primary:hover, .btn-outline-primary:active {
