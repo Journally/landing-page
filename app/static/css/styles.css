@@ -104,8 +104,10 @@ School vector created by pch.vector - www.freepik.com</a> */
   }
 
   .header {
-    font-family: "Trattatello", "Brush Script MT", "Papyrus";
-    padding: 15px;
+    font-family: 'Roboto Slab', serif;
+    /*font-family: 'Niconne', cursive;*/
+    /*font-family: 'Pacifico', cursive;"Papyrus", "Trattatello", "Brush Script MT";*/
+    padding-top: 10px;
     text-align: center;
     color: black;
     background: #eaf3fa;
