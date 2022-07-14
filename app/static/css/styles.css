@@ -33,19 +33,39 @@ nav li a:hover {
 .form-group {
     margin-bottom:15px;
 }
+
+#section1-container {
+  position:block;
+}
+
+/* Split the screen in half */
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
   
 /* Control the left side */
 .left {
-  position: relative;
+  /* position: fixed; */
   top: 0;
   left: 0;
   width: 40vw;
   height: 100vh;
+  text-align: center;
+  display: flex; 
+  /* remove this ^^ and you fix the weird gap but it isn't vertically aligned anymore... */ 
+  align-items: center;
+  margin-right: -50px !important;
 }
   
 /* Control the right side */
 .right {
-  position: relative;
+  /* position: fixed; */
   right: 0;
   top: 0;
   height: 100vh;
@@ -58,19 +78,21 @@ nav li a:hover {
   background-size: cover;
   background-position: center;
   z-index: -1;
+
+  margin-left: -50px !important;
 }
 
 /* If you want the content centered horizontally and vertically */
-.centered {
+/* .centered {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-}
+} */
 
 /* Style the image inside the centered container, if needed */
-.centered img {
+img {
   width: 150px;
   border-radius: 50%;
 }
@@ -92,6 +114,7 @@ nav li a:hover {
     color: #e68639;
     font-family: "Copperplate";
     font-weight: bold;
+    margin-right: -50px !important;
 }
 
 #timeline {
