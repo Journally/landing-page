@@ -13,5 +13,5 @@ twilio==7.5.1
 urllib3==1.26.8
 Flask==2.1.0
 werkzeug
-pymongo==4.1.1
+pymongo[tls,srv]==4.1.1
 python-dotenv==0.20.0
