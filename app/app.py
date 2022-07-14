@@ -8,7 +8,7 @@ load_dotenv()
 
 app = Flask(__name__)
 
-client = MongoClient(f"mongodb+srv://admin:{os.getenv('MONGODB_PASSWORD')}@journally.ywk9p1u.mongodb.net/?retryWrites=true&w=majority", connect=False, tlsCAFile=certifi.where())
+client = MongoClient(os.getenv('MONGODB_URI'), connect=False, tlsCAFile=certifi.where())
 # client = MongoClient(f"mongodb+srv://admin:{os.getenv('MONGODB_PASSWORD')}@journally.ywk9p1u.mongodb.net/?retryWrites=true&w=majority", connect=False, tlsAllowInvalidCertificates=True)
 db = client.landing_page
 prereg = db.prereg
