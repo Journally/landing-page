@@ -1,33 +1,8 @@
 * {
     box-sizing:border-box;
-}
-
-nav {
-    background-color:aquamarine;
-    padding:30px, 60px;
-    display:flex;
-    justify-content: space-between;
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-nav li {
-    list-style: none;
-}
-
-nav li a {
-    text-decoration: none;
-    font-weight:bold;
-    padding:5px 8px;
-}
-
-nav li a:hover {
-    color:yellow;
-    text-decoration:none;
+    background-color: #eaf3fa;
+    overflow: hidden;
+    /* height: 95vh; */
 }
 
 .form-group {
@@ -36,6 +11,7 @@ nav li a:hover {
 
 #section1-container {
   position:block;
+  /* background-color: #fcecdc; */
 }
 
 /* Split the screen in half */
@@ -51,35 +27,40 @@ nav li a:hover {
   
 /* Control the left side */
 .left {
-  /* position: fixed; */
-  top: 0;
-  left: 0;
-  width: 40vw;
-  height: 100vh;
+  position: block;
+  margin-left: 75px;
+  margin-right: 0px;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 30vw;
+  height: 95vh;
   text-align: center;
   display: flex; 
-  /* remove this ^^ and you fix the weird gap but it isn't vertically aligned anymore... */ 
   align-items: center;
-  margin-right: -50px !important;
+  justify-content: center;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
 }
   
 /* Control the right side */
 .right {
-  /* position: fixed; */
+  position: block;
   right: 0;
   top: 0;
-  height: 100vh;
+  height: 95vh;
   width: 60vw;
 
-  /*right: 0;*/
-  background-image: url('journalling_image_375_600.png');
-  background-repeat: no-repeat;
-  /*background-attachment: fixed;*/
-  background-size: cover;
-  background-position: center;
-  z-index: -1;
+  /* TODO: TO GET RID OF THE ISSUE OF THE WEIRD MOVING, MAYBE SET THIS AS HTML IMG RATHER THAN BACKGROUND??*/
 
-  margin-left: -50px !important;
+  /*right: 0;*/
+  /* background-image: url('journalling_image_375_600.png');
+  background-repeat: no-repeat; */
+  /* background-attachment: fixed; */
+  /* background-size: cover;
+  background-position: center; */
+  /* z-index: -1; */
+
+  margin-left: 0px;
 }
 
 /* If you want the content centered horizontally and vertically */
@@ -89,13 +70,13 @@ nav li a:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-} */
+} 
 
 /* Style the image inside the centered container, if needed */
-img {
+/* img {
   width: 150px;
   border-radius: 50%;
-}
+} */
 
 .header {
   font-family: 'Roboto Slab', serif;
@@ -104,21 +85,24 @@ img {
   padding-top: 10px;
   text-align: center;
   color: black;
-  background: #eaf3fa;
   font-size: 50px;
-  font-weight: bold !important;
+  font-weight: bold;
   z-index: 1;
+  margin-bottom: 5vh;
 }
 
 .slogan {
     color: #e68639;
     font-family: "Copperplate";
     font-weight: bold;
-    margin-right: -50px !important;
+    margin-right: 0px;
+    height: 95vh;
 }
 
 #timeline {
-  color: #86d1cd !important;
+  color: #86d1cd;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
 }
 
 .email-submit-label {
@@ -140,6 +124,12 @@ img {
     background-color: #c9d4dd !important;
     color: #72ccc8 !important;
     font-weight: bold;
+}
+
+.home-image {
+  width: 67vw;
+  /* margin-left: -10vw; */
+  /* margin-right: auto; */
 }
 
 #about {
