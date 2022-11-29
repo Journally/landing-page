@@ -1,0 +1,122 @@
+* {
+    box-sizing:border-box;
+    background-color: #eaf3fa;
+    overflow: hidden;
+    /* height: 95vh; */
+}
+
+.leftside, .rightside {
+    height:50vh;
+    width:100%;
+}
+
+@media screen and (min-width:992px) {
+    .leftside, .rightside {
+        height: 100vh;
+    }
+
+    form {
+        width: 40vw !important;
+        margin: 17% auto !important;
+    }
+
+    .home-image {
+        height: 55vh !important;
+        width: auto !important;
+    }
+
+    .input {
+        display: flex;
+        align-items: center;
+        width: 35vw !important;
+        margin-left: auto; /*75px;*/
+        margin-right: auto; /*75px;*/
+    }
+
+    #header {
+        font-family: 'Roboto Slab', serif;
+        /*font-family: 'Niconne', cursive;*/
+        /*font-family: 'Pacifico', cursive;"Papyrus", "Trattatello", "Brush Script MT";*/
+        /* padding-top: 10px; */
+        text-align: center;
+        /* color: black; */
+        font-size: 50px;
+        font-weight: bold;
+        /* z-index: 1;
+        margin-bottom: 5vh; */
+    }
+
+    .header {
+        color: #e68639;
+        font-family: "Copperplate";
+        font-weight: bold;
+        text-align: center;
+    }
+}
+
+form {
+    width: 80vw;
+    margin: 17% auto;
+}
+
+#header {
+    font-family: 'Roboto Slab', serif;
+    /*font-family: 'Niconne', cursive;*/
+    /*font-family: 'Pacifico', cursive;"Papyrus", "Trattatello", "Brush Script MT";*/
+    /* padding-top: 10px;
+    text-align: center;*/
+    text-align: center;
+    /* color: black; */
+    font-size: 50px;
+    font-weight: bold;
+    /* z-index: 1;
+    margin-bottom: 5vh; */
+  }
+
+.header {
+    color: #e68639;
+    font-family: "Copperplate";
+    font-weight: bold;
+    text-align: center;
+}
+
+#arrival-date {
+  color: #86d1cd;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+}
+
+.email-submit-label {
+    color: #2a4f96 !important;
+    font-family: "Copperplate";
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.btn-outline-primary {
+    background-color: #eaf3fa !important;
+    color: #86d1cd !important;
+    border-color: #86d1cd !important;
+    margin: 8px;
+    font-size: 15px;
+}
+
+.btn-outline-primary:hover, .btn-outline-primary:active {
+    background-color: #c9d4dd !important;
+    color: #72ccc8 !important;
+    font-weight: bold;
+}
+
+.home-image {
+  width: 67vw;
+  /* margin-left: -10vw; */
+  /* margin-right: auto; */
+}
+
+.input {
+    display: block;
+    align-items: center;
+    width: 60vw;
+    margin-left: auto; /*75px;*/
+    margin-right: auto; /*75px;*/
+  }
