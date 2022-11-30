@@ -1,0 +1,13 @@
+runtime: python38
+
+handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: static/images/favicon\.ico
+- url: /static
+  static_files: static
+  upload: static/css/.*\.(css|png)$
+  http_headers:
+    Access-Control-Allow-Origin: http://*
+- url: /.*
+  script: auto
