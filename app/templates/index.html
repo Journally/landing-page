@@ -1,22 +1,37 @@
 <!DOCTYPE html>
   <head>
     <meta charset="utf-8">
+    <title>Journally</title>
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!--Bootstrap-->
-    <link href="static/css/bootstrap.min.css" rel="stylesheet" media="all">
-    <!--Own Style-->
-    <link rel="stylesheet" href="static/css/style.css">
 
-    <meta name="description" content="Journally is an app that reminds you to document your day.">
-    <meta charset="utf-8">
-    <title>Journally</title>
+          <!--Icon for Chrome tab-->
+      <!-- <link rel="shortcut icon" type="image/x-icon" href="images/logo/QW_logo_transparent_32px.png"/> -->
+      <!-- Fonts -->
+      <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+      <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Niconne&display=swap" rel="stylesheet"> -->
+      <link rel="preconnect" href="https://fonts.googleapis.com/">
+      <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
 
-    <link rel="icon" type="image/x-icon" href="static/css/journally_logo.ico">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Journally is an app that reminds you to document your day.">
+      <meta charset="utf-8">
+      <title>Journally</title>
 
+      <!--Make consistent across browsers-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+      <!--Bootstrap-->
+      <link href="static/css/bootstrap.min.css" rel="stylesheet" media="all">
+      <!--Own style-->
+      <link rel="stylesheet" href="static/css/style.css">
+
+      <link rel="icon" type="image/x-icon" href="static/css/journally_logo.ico">
   </head>
   <body>
-
     <div class="row no-gutters">
 
         <div class="col-lg-6 no-gutters">
@@ -26,27 +41,46 @@
                 <form action="thank-you" method="post" name="registration-form">
                     <div class="header">
                       <h1 id="header"> JOURNALLY</h1>
+                      <h4 id="arrival-date">Coming Summer 2022.</h4>
+                    </div>
+                    <div class="description">
                       <h3>A journal entry a day.</h3>
-                      <h3>All through text.</h3>
-                      <p id="arrival-date">Coming Spring 2023</p>
+                      <h3>All through text. <b>Sign up below.</b></h3>
                     </div>
                     <div class="input">
-                      <label class="email-submit-label">Stay informed</label>
-                      <input name="exampleInputName" class="form-control" id="exampleInputName" placeholder="Enter your name">
-                      <input type="email" name="exampleInputEmail" class="form-control" id="exampleInputEmail" placeholder="Enter your email">
-                      <input type="submit" class="btn btn-outline-primary btn-lg" id="email-submit-button" value="Submit">
+                      <input type="text" class="button" id="email" name="email" placeholder="NAME@EXAMPLE.COM">
+                      <input type="submit" class="button" id="submit" value="SIGN UP">
                     </div>
                 </form>
+
             </div>
+
         </div>
 
         <div class="col-lg-6 no-gutters">
+
             <div class="rightside d-flex justify-content-center align-items-center">
-              <img class="home-image" src="/static/css/journalling_image_375_600-removebg.png">
+                <img class="home-photo" src="/static/images/journalling_image_375_600-removebg.png">
             </div>
+
         </div>
 
     </div>
+    
 
+    <!-- <form action="#" method="post" name="sign up for beta form">
+      <div class="header">
+         <p id="header">Welcome to LevelLink</p>
+         <p id="arrival-date">COMING FALL 2022</p>
+      </div>
+      <div class="description">
+        <p>LevelLink wants to connect you with a community of gamers just like you.</p>
+        <p>If you would like to be the first to test it out, sign up below.</p>
+      </div>
+      <div class="input">
+        <input type="text" class="button" id="email" name="email" placeholder="NAME@EXAMPLE.COM">
+        <input type="submit" class="button" id="submit" value="SIGN UP">
+      </div>
+    </form> -->
   </body>
 </html>

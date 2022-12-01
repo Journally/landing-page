@@ -1,17 +1,11 @@
-* {
-    box-sizing:border-box;
-    background-color: #eaf3fa;
-    overflow: hidden;
-    /* height: 95vh; */
-}
-
 .leftside, .rightside {
     height:50vh;
     width:100%;
+    background-color: #eaf3fa;
 }
 
 @media screen and (min-width:992px) {
-    .leftside, .rightside {
+    .rightside, .leftside {
         height: 100vh;
     }
 
@@ -20,7 +14,7 @@
         margin: 17% auto !important;
     }
 
-    .home-image {
+    .home-photo {
         height: 55vh !important;
         width: auto !important;
     }
@@ -31,92 +25,148 @@
         width: 35vw !important;
         margin-left: auto; /*75px;*/
         margin-right: auto; /*75px;*/
-    }
+      }
 
     #header {
-        font-family: 'Roboto Slab', serif;
-        /*font-family: 'Niconne', cursive;*/
-        /*font-family: 'Pacifico', cursive;"Papyrus", "Trattatello", "Brush Script MT";*/
-        /* padding-top: 10px; */
-        text-align: center;
-        /* color: black; */
-        font-size: 50px;
-        font-weight: bold;
-        /* z-index: 1;
-        margin-bottom: 5vh; */
-    }
-
-    .header {
-        color: #e68639;
-        font-family: "Copperplate";
-        font-weight: bold;
-        text-align: center;
+    font-size: 35px;
+    color: #930f63;
     }
 }
 
-form {
+
+.leftside {
+    /* background: #e7e7ff; */
+}
+
+.rightside {
+    /* background: #3034a2; */
+}
+
+.home-photo {
+    height: auto;
+    width: 60vw;
+}
+
+
+body {
+    background: #56b6ac;
+    font-family: 'Lato', sans-serif;
+    color: black;
+    text-align: center;
+  }
+  
+  
+  form {
     width: 80vw;
     margin: 17% auto;
-}
+  }
+  
 
-#header {
+
+  .header {
     font-family: 'Roboto Slab', serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bolder;
     /*font-family: 'Niconne', cursive;*/
     /*font-family: 'Pacifico', cursive;"Papyrus", "Trattatello", "Brush Script MT";*/
-    /* padding-top: 10px;
-    text-align: center;*/
-    text-align: center;
+    /* padding-top: 10px; */
+    /* text-align: center; */
     /* color: black; */
     font-size: 50px;
     font-weight: bold;
-    /* z-index: 1;
-    margin-bottom: 5vh; */
+    /* z-index: 1; */
+    /* margin-bottom: 5vh; */
   }
 
-.header {
+  #header {
+    font-size: 40px;
+    color: #930f63;
+  }
+
+
+  #arrival-date {
+    color: #86d1cd;
+    /* margin-top: 4vh; */
+    /* margin-bottom: 4vh; */
+  }
+  
+  
+  .description {
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 1.3em;
+    margin: -2px 0 45px;
+
     color: #e68639;
     font-family: "Copperplate";
     font-weight: bold;
-    text-align: center;
-}
-
-#arrival-date {
-  color: #86d1cd;
-  margin-top: 4vh;
-  margin-bottom: 4vh;
-}
-
-.email-submit-label {
-    color: #2a4f96 !important;
-    font-family: "Copperplate";
-    font-weight: bold;
-    font-size: 15px;
-}
-
-.btn-outline-primary {
-    background-color: #eaf3fa !important;
-    color: #86d1cd !important;
-    border-color: #86d1cd !important;
-    margin: 8px;
-    font-size: 15px;
-}
-
-.btn-outline-primary:hover, .btn-outline-primary:active {
-    background-color: #c9d4dd !important;
-    color: #72ccc8 !important;
-    font-weight: bold;
-}
-
-.home-image {
-  width: 67vw;
-  /* margin-left: -10vw; */
-  /* margin-right: auto; */
-}
-
-.input {
-    display: block;
+    /* margin-right: 0px; */
+    /* height: 95vh; */
+  }
+  
+  
+  .input {
+    display: flex;
     align-items: center;
     width: 60vw;
     margin-left: auto; /*75px;*/
     margin-right: auto; /*75px;*/
+  }
+
+  ::placeholder {
+    color: #5fd2ec;
+  }
+  
+  
+  .button {
+    height: 44px;
+    border: none;
+    color: #e7e7ff;
+  }
+  
+    
+  #email {
+    width: 75%;
+    font-family: inherit;
+    background: #c9d4dd;
+    color: #72ccc8 !important;
+    border-color: #86d1cd !important;
+    letter-spacing: 1px;
+    text-indent: 5%;
+    border-radius: 5px 0 0 5px;
+  }
+  
+  
+  #submit {
+    width: 25%;
+    height: 46px;
+    font-family: inherit;
+    font-weight: bold;
+    background: #2a4f96;
+    color: #86d1cd !important;
+    border-color: #86d1cd;
+    letter-spacing: 1px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background .3s ease-in-out;
+  }
+    
+  
+  #submit:hover {
+    background: #3034a2 ;
+  }
+    
+  
+  input:focus {
+    outline: none;
+    outline: 2px solid #3034a2 ;
+    box-shadow: 0 0 2px #3034a2 ;
+  }
+
+  .thanks-message {
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 1.3em;
+    margin: -2px 0 45px;
   }
